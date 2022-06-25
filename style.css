@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    
+    /* ## Colors */
+
+    /* ### Primary */
+    
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    
+    /* ### Neutral */
+    
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+
+    /* FONTS */
+
+    --fnt-accent: 'Big Shoulders Display', cursive;
+    --fnt-main: 'Lexend Deca', sans-serif;
+
+}
+
+body {
+    background-color: black;
+    font-family: var(--fnt-main);
+    color: var(--transparent-white);
+    
+    
+}
+
+img {
+    width: 50px; 
+    display: block;
+}
+
+.container {
+    width: 375px;
+    background-color: var(--very-light-gray);
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.cards {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.col {
+    padding: 3rem;
+}
+
+.sedans {
+    background-color: var(--bright-orange);
+    
+}
+
+.sedans a {
+    color: var(--bright-orange)
+}
+
+.suvs {
+    background-color: var(--dark-cyan);
+}
+
+.suvs a {
+    color: var(--dark-cyan);
+}
+
+.luxury {
+    background-color: var(--very-dark-cyan);
+    
+}
+
+.luxury a {
+    color: var(--very-dark-cyan)
+}
+
+.icon {
+    padding-bottom: 1rem;
+}
+
+h1 {
+    font-family: var(--fnt-accent);
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+}
+
+p {
+    padding-bottom: 2.5rem;
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none;
+    background-color: var(--very-light-gray);
+    padding: 1rem 3rem;
+    border-radius: 50px;
+    border: 0;
+}
+
+button {
+    border-radius: 50px;
+    border: 0;
+}
+
+.sedans a:hover {
+    background-color: var(--bright-orange);
+    border: solid hsla(0, 0%, 100%, 0.75);
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.suvs a:hover {
+    background-color: var(--dark-cyan);
+    border: solid hsla(0, 0%, 100%, 0.75);
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.luxury a:hover {
+    background-color: var(--very-dark-cyan);
+    border: solid hsla(0, 0%, 100%, 0.75);
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+@media (min-width: 1000px) {
+
+    img {
+        width: 70px;
+    }
+
+
+    .container {
+        width: 100vw;
+        height: 100vh;
+        /* margin: 0 auto; */
+    }
+
+    .cards {
+        width: 1140px;
+        display: flex;
+        /* margin: 0 auto; */
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+    .col {
+        padding-bottom: 4rem;
+    }
+
+
+    h1 {
+        padding-bottom: 2rem;
+    }
+
+    p {
+        padding-bottom: 5rem;
+    }
+
+}
